@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8000
 
 # 5. Rodar a aplicação
-CMD ["fastapi","run", "main.py", "0.0.0.0:8000"]
+CMD ["fastapi", "run", "main.py", "0.0.0.0:8000"]
