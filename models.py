@@ -4,7 +4,7 @@ from sqlmodel import SQLModel, Field
 
 class LivroBase(SQLModel):
     titulo: str
-    genero: str = Field(default="Desconhecido")
+    genero: str = Field(default='Desconhecido')
     autor: str
     pais: str = Field(min_length=3)
     ano: int = Field(le=datetime.datetime.now().year)

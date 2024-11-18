@@ -7,9 +7,7 @@ from .database import get_engine
 app = FastAPI()
 
 
-# Registrar os Router (controllers)
 app.include_router(livros_router,
                    prefix='/livros')
 
-# Criar DB
 SQLModel.metadata.create_all(get_engine())
