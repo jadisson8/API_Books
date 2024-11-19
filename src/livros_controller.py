@@ -1,7 +1,7 @@
 from fastapi import APIRouter, status, HTTPException
 
-from .database import get_engine
-from .models import Livro, RequestLivro
+from src.database import get_engine
+from src.models import Livro, RequestLivro
 from sqlmodel import Session, select, update
 
 

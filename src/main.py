@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from sqlmodel import SQLModel
-from .livros_controller import router as livros_router
-from .database import get_engine
+from src.livros_controller import router as livros_router
+from src.database import get_engine
 
 
 app = FastAPI()
